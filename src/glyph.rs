@@ -6,7 +6,7 @@
 use alloc::boxed::Box;
 use core::fmt::{Debug, Formatter};
 
-use peniko::Font;
+use crate::peniko::Font;
 use skrifa::bitmap::{BitmapData, BitmapFormat, BitmapStrikes, Origin};
 use skrifa::instance::{LocationRef, Size};
 use skrifa::outline::DrawSettings;
