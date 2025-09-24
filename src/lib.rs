@@ -12,6 +12,8 @@
 only break in edge cases, and some of them are also only related to conversions from f64 to f32."
 )]
 
+extern crate alloc;
+
 pub mod blurred_rounded_rect;
 pub mod coarse;
 pub mod colr;
@@ -21,5 +23,10 @@ pub mod glyph;
 pub mod math;
 pub mod strip;
 pub mod tile;
+
+// Re-export vello_api as a module to maintain compatibility with existing code
+pub mod vello_api {
+    pub use ::vello_api::*;
+}
 
 pub use vello_api::*;
