@@ -9,7 +9,10 @@ repository = "https://github.com/cyrup-ai/vello_common"
 documentation = "https://docs.rs/vello_common"
 
 [dependencies]
-vello_api = { git = "https://github.com/cyrup-ai/vello_api" }
+vello_api = { git = "https://github.com/cyrup-ai/vello_api", branch = "main" }
+skrifa = "0.31.3"
+smallvec = "2.0.0-alpha.11"
+bytemuck = "1.23.2"
 
 [features]
 default = []
