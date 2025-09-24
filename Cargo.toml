@@ -1,0 +1,16 @@
+[package]
+name = "vello_common"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Core data structures and utilities shared across vello crates"
+homepage = "https://github.com/cyrup-ai/vello_common"
+repository = "https://github.com/cyrup-ai/vello_common"
+documentation = "https://docs.rs/vello_common"
+
+[dependencies]
+vello_api = { git = "https://github.com/cyrup-ai/vello_api" }
+
+[features]
+default = []
+simd = []
